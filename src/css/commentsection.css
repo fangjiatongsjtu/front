@@ -1,0 +1,203 @@
+.comment-section {
+    font-family: PingFang SC, HarmonyOS_Regular, Helvetica Neue, Microsoft YaHei, sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 24px;
+    z-index: 0;
+    position: relative;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.reply-header .reply-navigation {
+    margin-bottom: 22px;
+}
+.nav-title{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.nav-title-text{
+    color: black;
+    font-family: PingFang SC, HarmonyOS_Medium, Helvetica Neue, Microsoft YaHei, sans-serif;
+    font-weight: 500;
+}
+.total-reply{
+    font-size: 13px;
+    margin: 0 36px 0 6px;
+    font-weight: 400;
+    color: grey;
+}
+.nav-sort{
+    font-size: 13px;
+}
+.part-symbol{
+    height: 11px;
+    margin: 0 12px;
+    border-left: solid 1px;
+}
+.reply-header .reply-navigation .nav-bar .nav-sort.hot .hot-sort .reply-header .reply-navigation .nav-bar .nav-sort.time .time-sort {
+    color: black;
+    cursor: pointer;
+}
+
+.reply-header .reply-navigation .nav-bar .nav-sort .part-symbol{
+    height: 11px;
+    margin: 0 12px;
+    border-left: solid 1px;
+}
+
+.comment-section .reply-wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.reply-wrap .box-normal{
+    display: flex;
+    z-index: 2;
+}
+
+.reply-wrap .box-normal .reply-box-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 48px;
+}
+
+.bili-avatar {
+    display: block;
+    position: relative;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.reply-box-warp.focus-within, .reply-box-warp:hover {
+    border-color: #e3e5e7;
+    background-color: white;
+}
+.reply-box-warp {
+     position: relative;
+     flex: 1;
+     transition: .2s;
+     border: 1px solid #E3E5E7;
+     border-radius: 6px;
+     background-color: white;
+     overflow-x: hidden;
+ }
+
+.reply-box-textarea{
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 6px;
+    cursor: text;
+    overflow: hidden;
+}
+textarea {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    overflow-wrap: break-word;
+    column-count: initial !important;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    padding: 2px;
+    white-space: pre-wrap;
+}
+
+.comment-section .reply-wrap .box-normal .reply-box-warp{
+    position: relative;
+    flex: 1;
+    transition: .2s;
+    border: 1px solid #E3E5E7;
+    border-radius: 6px;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+#root > div > div > div.container > div > div > div > div > div.comment-section > div.reply-wrap > div.box-normal > div.reply-box-wrap{
+    position: relative;
+    flex: 1;
+    transition: .2s;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+#root > div > div > div.container > div > div > div > div > div.comment-section > div.reply-wrap > div.box-normal > div.reply-box-wrap > textarea{
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    cursor: text;
+    overflow: hidden;
+}
+
+.reply-box-send{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 70px;
+    height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.reply-list{
+    margin-top: 14px;
+    padding-bottom: 100px;
+}
+
+.reply-item{
+    position: relative;
+}
+
+#root > div > div > div.container > div > div > div > div > div.comment-section > div.reply-wrap > div.reply-list > div:nth-child(1) > div.root-reply-avatar{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    width: 80px;
+    cursor: pointer;
+}
+
+#root > div > div > div.container > div > div > div > div > div.comment-section > div.reply-wrap > div.reply-list > div:nth-child(1) > div.root-reply-avatar > div{
+    flex: 1;
+    position: relative;
+}
+
+#root > div > div > div.container > div > div > div > div > div.comment-section > div.reply-wrap > div.reply-list > div:nth-child(1) > div.content-wrap > div.user-info{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}

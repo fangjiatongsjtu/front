@@ -1,0 +1,87 @@
+.q_header_sub {
+    background: #1badb6;
+    height: 50px;
+    font: normal 12px / 1.5 tahoma, arial, sans-serif;
+}
+
+.q_header_sub .q_header_sub_inner {
+    height: 50px;
+    position: relative;
+    _zoom: 1;
+}
+
+@media screen and (max-width: 1400px) {
+    .q_header .q_header_sub_inner {
+        width: 956px;
+    }
+}
+
+.q_header_sub_inner .q_header_sub_menu_r {
+    float: right;
+    _display: inline;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    width: 30px;
+    margin: 10px 10px 0 10px;
+    cursor: pointer;
+    color: #000;
+    font: normal 12px/1.5 tahoma,arial,sans-serif;
+}
+.q_header_sub .q_header_sub_inner .general_search {
+    position: relative;
+    padding: 10px 0 0;
+    height: 40px;
+    float: right;
+    z-index:0;
+    color: #000;
+    font: normal 12px/1.5 tahoma,arial,sans-serif;
+}
+
+.q_header_sub_inner .q_header_sub_menu_l {
+    float: left;
+    display: inline;
+    color: #000;
+    font: normal 12px/1.5 tahoma,arial,sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.q_header_sub .q_header_sub_inner li {
+    height: 50px;
+    list-style: none;
+}
+
+.q_header_sub .home {
+    width: 208px;
+}
+
+.q_header_sub li {
+    float: left;
+    display: inline;
+}
+
+.q_header_sub .home a {
+    width: 100%;
+    padding: 0;
+}
+
+.q_header_sub li a {
+    float: left;
+    display: inline;
+    padding: 0 26px;
+    height: 50px;
+    font: 16px / 50px "microsoft yahei", tahoma, arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.general_search .searchbar-container{
+
+}
+
+.searchbar-container .ant-input {
+    height: 32px;
+}
