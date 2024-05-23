@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import HeaderInfo from "../component/HeaderInfo";
 import NavBar from "../component/NavBar";
 import "../css/journalcreate.css"
@@ -16,12 +16,36 @@ import TextArea from "antd/es/input/TextArea";
 import MyUpload from "../component/MyUpload";
 import MyForm from "../component/MyForm";
 const { Title, Paragraph, Text, Link } = Typography;
-const onChange = (e) => {
-    console.log('Change:', e.target.value);
-};
 const CreateView = () => {
+    const default_travelogue ={
+        preface:"",
+        main_body:"",
+        photo_description:"",
+        address:"",
+        members:"",
+        title:"",
+        departure_time:"",
+        duration:-1,
+        cost:-1,
+        likes:0,
+        views:0,
+        shares:0,
+        create_time:"",
+        status:{"status":"审核中","comment":""},
+        images:[],
+        author:"",
+        comments:[]
+    }
+    const [travellogue,setTravellogue]=useState(default_travelogue);
     const isLogin = localStorage.getItem("userinfo")!==null && JSON.parse(localStorage.getItem("userinfo")).isLogin === 1
     const userinfo = isLogin ?JSON.parse(localStorage.getItem("userinfo")):"";
+    const onChange = (e) => {
+        const key = e.target.id;
+        const new_travellogue = travellogue;
+        new_travellogue[key] = e.target.value;
+        setTravellogue(new_travellogue);
+        console.log('Change:', travellogue);
+    };
     return(
         <div>
             <div className="journal-create-pc">
@@ -44,6 +68,7 @@ const CreateView = () => {
                                 </Text>
                                 <Flex  style={{width:'100%', marginLeft:'20px'}}>
                                     <TextArea
+                                        id="title"
                                         showCount
                                         maxLength={20}
                                         onChange={onChange}
@@ -79,6 +104,7 @@ const CreateView = () => {
                                         <Title style={{height: "60px", fontSize:"30px"}}>
                                             <EnvironmentFilled style={{color:"#999"}}/>
                                             <TextArea
+                                                id="address"
                                                 showCount
                                                 maxLength={20}
                                                 onChange={onChange}
@@ -97,6 +123,7 @@ const CreateView = () => {
                             }>
                             <Flex  style={{width:'100%'}}>
                                 <TextArea
+                                    id="preface"
                                     showCount
                                     maxLength={500}
                                     onChange={onChange}
@@ -130,6 +157,7 @@ const CreateView = () => {
                                               <Title style={{height: "60px", fontSize:"30px"}}>
                                                   <EnvironmentFilled style={{color:"#999"}}/>
                                                   <TextArea
+                                                      id="address"
                                                       showCount
                                                       maxLength={20}
                                                       onChange={onChange}
@@ -148,6 +176,7 @@ const CreateView = () => {
                                       }>
                                     <Flex  style={{width:'100%'}}>
                                         <TextArea
+                                            id="main_body"
                                             showCount
                                             maxLength={500}
                                             onChange={onChange}
@@ -182,6 +211,7 @@ const CreateView = () => {
                                           <Title style={{height: "60px", fontSize:"30px"}}>
                                               <EnvironmentFilled style={{color:"#999"}}/>
                                               <TextArea
+                                                  id="address"
                                                   showCount
                                                   maxLength={20}
                                                   onChange={onChange}
@@ -200,6 +230,7 @@ const CreateView = () => {
                                   }>
                                 <Flex  style={{width:'100%'}}>
                                     <TextArea
+                                        id="photo_description"
                                         showCount
                                         maxLength={500}
                                         onChange={onChange}
