@@ -17,6 +17,7 @@ import MyUpload from "../component/MyUpload";
 import MyForm from "../component/MyForm";
 const { Title, Paragraph, Text, Link } = Typography;
 const CreateView = () => {
+
     const default_travelogue ={
         preface:"",
         main_body:"",
