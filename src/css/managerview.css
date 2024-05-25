@@ -1,0 +1,18 @@
+.manager-pc{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 1400px;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-style: inherit;
+    background-color: #f7faff;
+
+}
+
+.manager-pc a{
+    text-decoration: none;
+}

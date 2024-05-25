@@ -1,0 +1,12 @@
+.login-form {
+    max-width: 300px;
+}
+#normal_login > div:nth-child(3) > div > div > div > div > a {
+    float: right;
+}
+.login-form-forgot {
+    float: left;
+}
+login-form-button {
+    width: 100%;
+}

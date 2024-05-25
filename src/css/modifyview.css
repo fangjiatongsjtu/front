@@ -1,0 +1,38 @@
+.modify-pc{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 1400px;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-style: inherit;
+    background-color: #f7faff;
+
+}
+
+.modify-pc a{
+    text-decoration: none;
+}
+
+.modify-pc .container .content .main-img{
+    height: 5000px;
+}
+
+.modify-pc .container .content .main-img .main-bg{
+    width: 100%;
+    height: 100%;
+    max-width: 2000px;
+    min-width: 1400px;
+    margin: 0 auto;
+    background-size: 2000px 780px;
+}
+
+.modify-pc .container{
+    width: 1200px;
+    position: relative;
+    margin: 0px auto;
+    padding: 20px 0px 0px;
+}
